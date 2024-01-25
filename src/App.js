@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './home';
 import Login from './login';
+import Frontpage from './frontpage';
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home email={email} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
           <Route path="/login" element={<Login setLoggedIn={setLoggedIn} setEmail={setEmail} />} />
+          <Route path="/frontpage" element={<Frontpage />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -11,7 +11,6 @@ const Home = (props) => {
             props.setLoggedIn(false);
         } else {
             navigate("/login");
-            
         }
     }
     return <div className="mainContainer">
